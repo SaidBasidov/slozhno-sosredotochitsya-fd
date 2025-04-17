@@ -1,0 +1,134 @@
+@media (width >= 768px) {
+  :root {
+    --main-padding: 20px;
+  }
+
+  .hero__size {
+    min-block-size: clamp(1024px, 100vh, 1366px);
+  }
+
+  .header {
+    padding-inline: var(--main-padding);
+    padding-block-start: 18.75vh;
+    padding-block-end: 17.8vh;
+  }
+
+  .decoration-rec {
+    inset-inline-end: 28px;
+    inset-block-start: 19px;
+  }
+
+  .header-title {
+    inset-inline-start: 0px;
+    font-size: 120px;
+    line-height: normal;
+  }
+
+  .main {
+    gap: 80px;
+  }
+
+  .section__text:not(.section__two-what) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .section__article:not(.section__two-article) {
+    grid-column: 2;
+  }
+
+  .section__two-title {
+    inline-size: min-content;
+  }
+
+  .section__gallery-wrapper {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .section__gallery-image-sunset {
+    grid-column: 1 / 3;
+  }
+
+  .section__gallery-image-ice {
+    object-fit: cover;
+    height: 100%;
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+  }
+
+  .section__gallery-image-tape {
+    object-fit: cover;
+    height: 100%;
+    grid-row: 2 / 5;
+    grid-column: 1 / 2;
+  }
+
+  .section__gallery-image-street {
+    object-fit: cover;
+    height: 100%;
+    grid-row: 3 / 5;
+    grid-column: 2 / 4;
+  }
+
+  .footer__titlle {
+    font-size: 120px;
+    line-height: 82.5%;
+  }
+}
+
+@media (width >= 1024px) {
+  .hero__size {
+    min-block-size: clamp(768px, 100vh, 1440px);
+  }
+
+  .header {
+    padding-inline: var(--main-padding);
+    padding-block-start: var(--main-padding);
+    padding-block-end: 17.6vh;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    gap: 11px;
+    flex-direction: row;
+  }
+
+  .header-title {
+    font-size: 157px;
+    line-height: 82.5%;
+  }
+
+  .header-text-wrapper {
+    max-inline-size: 491px;
+  }
+
+  .section__text {
+    gap: 10px;
+  }
+
+  .section__article:not(:last-child) {
+    margin-block-end: 10px;
+  }
+
+  .section__two-what {
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .section__two-title {
+    inline-size: 100%;
+  }
+
+  .section__two-article {
+    grid-row: 2;
+  }
+
+  .footer__titlle {
+    font-size: 157px;
+    line-height: 82.5%;
+  }
+}
