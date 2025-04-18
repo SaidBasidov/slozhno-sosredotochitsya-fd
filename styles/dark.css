@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root.theme-dark {
+:root.theme-dark, .theme-dark .page {
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --text-color: #f1b2ce;
@@ -12,14 +12,9 @@
   --text-secondary-color: #000028;
   --secondary-color: #ff0070;
   --background-image: url(../images/cover-image-dark.png);
+  --button-transparen-coolor: rgba(255, 0, 112, 0.4);
 }
 
-.theme-dark .page {
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --text-color: #f1b2ce;
-  --base-color: #000028;
-  --text-secondary-color: #000028;
-  --secondary-color: #ff0070;
-  --background-image: url(../images/cover-image-dark.png);
+:root.theme-dark .decoration-rec {
+  display: initial;
 }

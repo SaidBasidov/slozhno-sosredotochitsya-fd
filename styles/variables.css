@@ -13,4 +13,5 @@
   --background-image: url(../images/cover-image-dark.png);
   --secondary-color: #ff0070;
   --text-secondary-color: #000028;
+  --button-transparen-coolor: rgba(255, 0, 112, 0.4);
 }
