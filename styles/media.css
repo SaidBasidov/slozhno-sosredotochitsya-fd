@@ -79,10 +79,6 @@
     min-block-size: clamp(768px, 100vh, 1440px);
   }
 
-  .header-text-wrapper {
-    align-self: center;
-  }
-
   .header__theme-menu {
     align-self: start;
     justify-self: center;
@@ -100,6 +96,7 @@
 
   .header-text-wrapper {
     max-inline-size: 491px;
+    align-self: center;
   }
 
   .section__text {
